@@ -64,8 +64,6 @@ typings/
 # distribution content
 dist/
 
-# _SpecRunner.html
-
-# src/js/.tern-port
-
-# .DS_Store
+# Some configuration files
+_SpecRunner.html
+src/js/.tern-port
