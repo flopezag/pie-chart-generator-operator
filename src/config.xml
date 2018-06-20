@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<operator xmlns="http://wirecloud.conwet.fi.upm.es/ns/macdescription/1" vendor="CoNWeT" name="pie-chart-generator" version="0.3.4">
+    <details>
+        <title>Pie Chart Generator</title>
+        <authors>Alejandro Rodriguez &lt;alex.rodriguez@conwet.com&gt;</authors>
+        <email>alex.rodriguez@conwet.com</email>
+        <image>images/catalogue.png</image>
+        <smartphoneimage></smartphoneimage>
+        <description>Generates a pie chart from a dataset</description>
+        <longdescription>DESCRIPTION.md</longdescription>
+        <changelog>doc/changelog.md</changelog>
+        <doc>doc/index.md</doc>
+        <license>MIT</license>
+        <homepage>https://github.com/Wirecloud/agile-dashboards</homepage>
+        <issuetracker>https://github.com/Wirecloud/agile-dashboards/issues</issuetracker>
+    </details>
+
+    <preferences>
+        <preference name="title" type="text" label="Chart Title" description="Title used for the chart" default=""/>
+    </preferences>
+
+    <wiring>
+        <inputendpoint name="number-serie" label="Number Data Serie" description="Source data series with numeric values" type="text" friendcode="number-serie" />
+        <inputendpoint name="label-serie" label="Label Data Serie" description="Soruce data series with names" type="text" friendcode="label-serie" />
+
+        <outputendpoint name="chart-options" label="Chart Data Model" description="Chart options" type="text" friendcode="highchart-options" />
+    </wiring>
+
+    <scripts>
+        <script src="js/main.js"/>
+    </scripts>
+
+</operator>

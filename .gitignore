@@ -25,12 +25,13 @@ coverage
 
 # Bower dependency directory (https://bower.io/)
 bower_components
+src/bower_components
 
 # node-waf configuration
 .lock-wscript
 
 # Compiled binary addons (https://nodejs.org/api/addons.html)
-build/Release
+build/
 
 # Dependency directories
 node_modules/
@@ -59,3 +60,12 @@ typings/
 
 # next.js build output
 .next
+
+# distribution content
+dist/
+
+# _SpecRunner.html
+
+# src/js/.tern-port
+
+# .DS_Store
